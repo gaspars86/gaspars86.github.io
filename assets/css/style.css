@@ -1,0 +1,40 @@
+
+:root{
+  --bg: #0c1116;
+  --card: #0f1720;
+  --ink: #e6edf3;
+  --muted: #98a2b3;
+  --accent: #4f8cff;
+  --chip: #1b2430;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.55}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:12px}
+.brand{display:flex;align-items:center;gap:16px}
+/*.brand .avatar{width:64px;height:64px;border-radius:50%;background:#223;display:flex;align-items:center;justify-content:center;font-weight:700}*/
+.brand .avatar{width:80px;height:80px;border-radius:50%;background:#122032 url('/assets/img/favicon.png') center/130% no-repeat;border:1px solid #1b2a3f}
+h1{font-size:clamp(28px,4vw,40px);margin:0}
+h2{font-size:clamp(22px,3vw,28px);margin:24px 0 12px}
+h3{font-size:clamp(18px,2.5vw,22px);margin:16px 0 8px}
+.nav{display:flex;flex-wrap:wrap;gap:10px}
+.nav a{background:var(--chip);padding:8px 12px;border-radius:999px}
+.hero{margin:28px 0;padding:24px;border:1px solid #1f2a37;border-radius:16px;background:linear-gradient(180deg, rgba(79,140,255,0.08), transparent);box-shadow:var(--shadow)}
+.grid{margin:28px 0;display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+.card{margin:14px 0;grid-column:span 12;border:1px solid #1f2a37;border-radius:14px;padding:18px;background:var(--card)}
+@media(min-width:900px){
+  .card.span-6{grid-column:span 6}
+  .card.span-4{grid-column:span 4}
+}
+.badges{display:flex;flex-wrap:wrap;gap:10px}
+.badge{background:var(--chip);border:1px solid #2a3645;border-radius:10px;padding:6px 10px;font-size:14px}
+.list{margin:0;padding:0;list-style:none}
+.list li{padding:6px 0;border-bottom:1px solid #1f2a37}
+.footer{margin:36px 0;color:var(--muted);font-size:14px}
+.button{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;box-shadow:var(--shadow)}
+.button:hover{text-decoration:none;opacity:.95}
+.meta{color:var(--muted);font-size:14px}
+.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;background:#0b1320;border:1px solid #1b2a3f;border-radius:6px;padding:2px 6px}
