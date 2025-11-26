@@ -10,7 +10,7 @@ a:hover{text-decoration:underline}
 .brand .avatar{width:80px;height:80px;border-radius:50%;background:#122032 url('/assets/img/favicon.png') center/130% no-repeat;border:1px solid #1b2a3f; flex:0 0 80px;}
 .brand > div{ min-width:0; }
 @media (max-width: 600px) { .brand .avatar { width: 60px; height: 60px; flex:0 0 60px; } .md-screen { display: none; } .sm-screen { display: inline; } }
-@media (max-width: 400px) { .sm-screen { display: none; } }
+@media (max-width: 374px) { .sm-screen { display: none; } }
 h1{font-size:clamp(28px,4vw,40px);margin:0}
 h2{font-size:clamp(22px,3vw,28px);margin:24px 0 12px}
 h3{font-size:clamp(18px,2.5vw,22px);margin:16px 0 8px}
